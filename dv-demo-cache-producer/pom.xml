@@ -59,7 +59,25 @@
 					</execution>
 				</executions>
 				<configuration>
-					<mainClass>com.redhat.summit.demo.dv.producer.Main</mainClass>
+					<mainClass>com.redhat.summit.demo.datagrid.producer.CacheDataProducer</mainClass>
+					<systemProperties>
+						<property>
+							<key>dv.demo.cache.name</key>
+							<value>medicalCache</value>
+						</property>
+						<property>
+							<key>dv.demo.postgresql.hostname</key>
+							<value>localhost</value>
+						</property>
+						<property>
+							<key>dv.demo.postgresql.port</key>
+							<value>5432</value>
+						</property>
+						<property>
+							<key>dv.demo.postgresql.dbname</key>
+							<value>medical</value>
+						</property>
+					</systemProperties>
 				</configuration>
 			</plugin>
 		</plugins>
